@@ -17,13 +17,9 @@ import com.ibm.json.java.JSONObject;
 
 @Path("/hello")
 public class HelloResource {
-
 	@GET
-	@Produces("application/json")
+	@Produces(MediaType.TEXT_PLAIN)
 	public String getInformation() throws Exception, IOException {
-        JSONObject myJSONObj = new JSONObject();
-        myJSONObj.put("message", "Hello World!");
-        return myJSONObj.toString();
-        
+        return "Hello World";
 	}
 }
