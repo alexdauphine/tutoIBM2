@@ -5,6 +5,9 @@ import java.util.Set;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+ 
+import com.example.model.BDDCOMMENTS;
+
 
 @Path("/comments")
 public class GetCommentsServlet {
@@ -12,5 +15,8 @@ public class GetCommentsServlet {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getInformation() throws Exception, IOException {
         return "Hello World";
+		
+		
+		
 	}
 }
