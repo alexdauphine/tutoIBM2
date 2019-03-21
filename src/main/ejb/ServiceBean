@@ -1,4 +1,4 @@
-package com.example.ejb;
+package com.ejb;
 
 import java.util.List;
 import javax.ejb.Stateless;
@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
  
-import com.example.model.BDDCOMMENTS;
+import com.model.BDDCOMMENTS;
 
 @Stateless
 public class ServiceBean{
@@ -21,6 +21,5 @@ public class ServiceBean{
         Query query = em.createQuery("FROM BDDCOMMENTS");
         List <BDDCOMMENTS> list = query.getResultList();
         return list;
- 
     }
 }
