@@ -6,7 +6,7 @@ import java.util.Set;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
  
-import com.example.model.BDDCOMMENTS;
+import com.model.BDDCOMMENTS;
 
 
 @Path("/comments")
