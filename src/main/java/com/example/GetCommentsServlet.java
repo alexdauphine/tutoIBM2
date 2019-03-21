@@ -30,8 +30,8 @@ public class GetCommentsServlet {
       	for (Iterator<BDDCOMMENTS> iterator = BDDCOMMENTS.iterator(); iterator.hasNext();)
       		{
         		BDDCOMMENTS c = (BDDCOMMENTS) iterator.next();
-        		//System.out.println(BDDCOMMENTS.getDate() + "\t" + BDDCOMMENTS.getComment() + "\n");
-			s = BDDCOMMENTS.getDate() + "\t" + BDDCOMMENTS.getComment() + "\n";
+        		//System.out.println(c.getDate() + "\t" + c.getComment() + "\n");
+			s = c.getDate() + "\t" + c.getComment() + "\n";
       		}
       	entityManager.getTransaction().commit();
 	return s;
