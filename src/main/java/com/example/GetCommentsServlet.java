@@ -15,8 +15,5 @@ public class GetCommentsServlet {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getInformation() throws Exception, IOException {
         return "Hello World";
-		
-		
-		
 	}
 }
