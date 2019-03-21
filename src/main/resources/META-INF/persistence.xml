@@ -5,7 +5,7 @@
     <class>com.example.model.Comment</class>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="com.ibm.db2.jcc.DB2Driver" />
-      <property name="javax.persistence.jdbc.url"    value="jdbc:db2://<dashdb-txn-sbox-yp-lon02-01.services.eu-gb.bluemix.net>:<port50000>/<sqldatabase>" />
+      <property name="javax.persistence.jdbc.url"    value="jdbc:db2://dashdb-txn-sbox-yp-lon02-01.services.eu-gb.bluemix.net:port50000/sqldatabase" />
       <property name="javax.persistence.jdbc.user" value="hbv05899" />
       <property name="javax.persistence.jdbc.password" value="lnmsqrpn^vfcb0r9" />
       <property name="hibernate.dialect" value="org.hibernate.dialect.DB2Dialect"/>
