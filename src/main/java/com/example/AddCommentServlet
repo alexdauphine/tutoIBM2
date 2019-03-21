@@ -6,7 +6,7 @@ import java.util.Set;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-@Path("/comments")
+@Path("/comments2")
 public class AddCommentServlet {
 	@POST
 	//@Consumes(MediaType.TEXT_PLAIN)
