@@ -24,12 +24,10 @@ public class GetCommentsServlet {
 		
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	/*
 	public String getInformation() throws Exception, IOException {
-        return "Hello World";
-	}
+        //return "Hello World";
 	list();
-	*/
+	}
 	
   public String list() {
 	  String s;
