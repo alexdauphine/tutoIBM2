@@ -17,7 +17,7 @@ import com.model.BDDCOMMENTS;
 @Path("/comments")
 public class GetCommentsServlet {
 	 
-	private EntityManager entityManager = EntityManagerUtil.getEntityManager();
+	EntityManager entityManager = EntityManagerUtil.getEntityManager();
 		
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
