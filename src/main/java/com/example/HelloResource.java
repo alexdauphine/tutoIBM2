@@ -8,16 +8,12 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.ibm.json.java.JSON;
-import com.ibm.json.java.JSONArray;
-import com.ibm.json.java.JSONObject;
-
 
 // This class define the RESTful API to fetch the database service information
 // <basepath>/api/hello
 
-@Path("/hello")
-public class HelloResource {
+@Path("/comments")
+public class GetCommentsServlet {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getInformation() throws Exception, IOException {
