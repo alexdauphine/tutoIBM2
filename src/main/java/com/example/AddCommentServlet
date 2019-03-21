@@ -12,6 +12,6 @@ public class AddCommentServlet {
 	//@Consumes(MediaType.TEXT_PLAIN)
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getInformation() throws Exception, IOException {
-        return "Hello World 2";
+        return "ok";
 	}
 }
