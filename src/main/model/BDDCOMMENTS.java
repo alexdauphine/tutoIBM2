@@ -1,4 +1,4 @@
-package com.example.model;
+package com.model;
  
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
