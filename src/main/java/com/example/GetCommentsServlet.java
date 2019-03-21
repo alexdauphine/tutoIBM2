@@ -18,9 +18,6 @@ import com.model.BDDCOMMENTS;
 public class GetCommentsServlet {
 	 
 	private EntityManager entityManager = EntityManagerUtil.getEntityManager();
-	
-	@Inject
-	private ServiceBean ejb;
 		
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
