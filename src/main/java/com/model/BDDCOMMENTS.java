@@ -36,6 +36,6 @@ public class BDDCOMMENTS {
  
     @Override
     public String toString() {
-        return "BDDCOMMENTS :\tdate=" + date + "\tcomment=" + value + "\n";
+        return "BDDCOMMENTS :\tdate=" + date + "\tcomment=" + comment + "\n";
     }
 }
