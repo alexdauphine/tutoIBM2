@@ -25,16 +25,16 @@ public class GetCommentsServlet {
 	public String getInformation() throws Exception, IOException {
         //return "Hello World";
 	String s;
-	entityManager.getTransaction().begin();
+	em.getTransaction().begin();
      	@SuppressWarnings("unchecked")
-      	List<BDDCOMMENTS> liste = entityManager.createQuery("from BDDCOMMENTS").getResultList();
+      	List<BDDCOMMENTS> liste = em.createQuery("from BDDCOMMENTS").getResultList();
       	for (Iterator<BDDCOMMENTS> iterator = liste.iterator(); iterator.hasNext();)
       		{
         		BDDCOMMENTS c = (BDDCOMMENTS) iterator.next();
         		//System.out.println(c.getDate() + "\t" + c.getComment() + "\n");
 			s = c.getDate() + "\t" + c.getComment() + "\n";
       		}
-      	entityManager.getTransaction().commit();
+      	em.getTransaction().commit();
 	return s;
 	}
 }
