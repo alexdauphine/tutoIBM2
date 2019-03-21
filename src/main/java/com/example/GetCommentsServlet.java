@@ -27,7 +27,7 @@ public class GetCommentsServlet {
 	entityManager.getTransaction().begin();
      	@SuppressWarnings("unchecked")
       	List<BDDCOMMENTS> liste = entityManager.createQuery("from BDDCOMMENTS").getResultList();
-      	for (Iterator<BDDCOMMENTS> iterator = BDDCOMMENTS.iterator(); iterator.hasNext();)
+      	for (Iterator<BDDCOMMENTS> iterator = liste.iterator(); iterator.hasNext();)
       		{
         		BDDCOMMENTS c = (BDDCOMMENTS) iterator.next();
         		//System.out.println(c.getDate() + "\t" + c.getComment() + "\n");
