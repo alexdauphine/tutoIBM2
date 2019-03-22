@@ -19,7 +19,12 @@ import com.model.BDDCOMMENTS;
 
 @Path("/comments")
 public class GetCommentsServlet {
-	 
+	
+	try {
+//CODE A TESTER
+		
+		
+		
 	final EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("test");
 	final EntityManager em = emFactory.createEntityManager();
 		
@@ -40,4 +45,22 @@ public class GetCommentsServlet {
       	em.getTransaction().commit();
 	return s;
 	}
+		
+		
+		
+		
+		
+
+//CODE A TESTER
+} catch (InvocationTargetException e) {
+
+    // Answer:
+    e.getCause().printStackTrace();
+} catch (Exception e) {
+
+    // generic exception handling
+    e.printStackTrace();
+}
+	 
+	
 }
