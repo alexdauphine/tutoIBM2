@@ -27,10 +27,7 @@ public class GetCommentsServlet {
 	public String getInformation() throws Exception, IOException {
         	//return "Hello World";
 		
-		
-		try {
-//CODE A TESTER
-			String s = "test";
+			String s = "test";/*
 			final EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("test");
 			final EntityManager em = emFactory.createEntityManager();
 			
@@ -43,18 +40,8 @@ public class GetCommentsServlet {
         				s = c.getDate() + "\t" + c.getComment() + "\n";
 					System.out.println(s);
       				}
-      			em.getTransaction().commit();
+      			em.getTransaction().commit();*/
 			return s;
-			
-		//CODE A TESTER
-		} catch (InvocationTargetException e) {
-    		// Answer:
-    		e.getCause().printStackTrace();
-		} catch (Exception e) {
-    		// generic exception handling
-    		e.printStackTrace();
-		}
-	
 	} 
 	
 }
