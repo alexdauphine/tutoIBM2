@@ -27,10 +27,10 @@ public class GetCommentsServlet {
 	public String getInformation() throws Exception, IOException {
         	//return "Hello World";
 		
-			String s = "test";/*
+			String s = "test";
 			final EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("test");
 			final EntityManager em = emFactory.createEntityManager();
-			
+			/*
 			em.getTransaction().begin();
      			@SuppressWarnings("unchecked")
       			List<BDDCOMMENTS> liste = em.createQuery("from BDDCOMMENTS").getResultList();
