@@ -20,47 +20,38 @@ import com.model.BDDCOMMENTS;
 @Path("/comments")
 public class GetCommentsServlet {
 	
-	try {
-//CODE A TESTER
-		
-		
-		
 	final EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("test");
 	final EntityManager em = emFactory.createEntityManager();
 		
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getInformation() throws Exception, IOException {
-        //return "Hello World";
-	String s = "test";
-	em.getTransaction().begin();
-     	@SuppressWarnings("unchecked")
-      	List<BDDCOMMENTS> liste = em.createQuery("from BDDCOMMENTS").getResultList();
-      	for (Iterator<BDDCOMMENTS> iterator = liste.iterator(); iterator.hasNext();)
-      		{
-        		BDDCOMMENTS c = (BDDCOMMENTS) iterator.next();
-        		s = c.getDate() + "\t" + c.getComment() + "\n";
-			System.out.println(s);
-      		}
-      	em.getTransaction().commit();
-	return s;
-	}
+        	//return "Hello World";
+		String s = "test";
 		
-		
-		
-		
-		
-
+		try {
 //CODE A TESTER
-} catch (InvocationTargetException e) {
-
-    // Answer:
-    e.getCause().printStackTrace();
-} catch (Exception e) {
-
-    // generic exception handling
-    e.printStackTrace();
-}
-	 
+			em.getTransaction().begin();
+     			@SuppressWarnings("unchecked")
+      			List<BDDCOMMENTS> liste = em.createQuery("from BDDCOMMENTS").getResultList();
+      			for (Iterator<BDDCOMMENTS> iterator = liste.iterator(); iterator.hasNext();)
+      				{
+        				BDDCOMMENTS c = (BDDCOMMENTS) iterator.next();
+        				s = c.getDate() + "\t" + c.getComment() + "\n";
+					System.out.println(s);
+      				}
+      			em.getTransaction().commit();
+			return s;
+			
+		//CODE A TESTER
+		} catch (InvocationTargetException e) {
+    		// Answer:
+    		e.getCause().printStackTrace();
+		} catch (Exception e) {
+    		// generic exception handling
+    		e.printStackTrace();
+		}
+	
+	} 
 	
 }
