@@ -21,18 +21,19 @@ import com.model.BDDCOMMENTS;
 
 @Path("/comments")
 public class GetCommentsServlet {
-	
-	final EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("test");
-	final EntityManager em = emFactory.createEntityManager();
 		
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getInformation() throws Exception, IOException {
         	//return "Hello World";
-		String s = "test";
+		
 		
 		try {
 //CODE A TESTER
+			String s = "test";
+			final EntityManagerFactory emFactory = Persistence.createEntityManagerFactory("test");
+			final EntityManager em = emFactory.createEntityManager();
+			
 			em.getTransaction().begin();
      			@SuppressWarnings("unchecked")
       			List<BDDCOMMENTS> liste = em.createQuery("from BDDCOMMENTS").getResultList();
